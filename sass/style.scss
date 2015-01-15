@@ -36,36 +36,36 @@ div {
   border-radius: 3px;
 }
 
-header{
-  height: 27px;
+header:after{
+
+  content:'';
+display: block;
+clear: both;
 }
 
 .inline-block {
   display: inline-block;
 }
 
-.header-div {
-  margin-left: 93px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.logo {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left:10%;
+  margin-right:2%;
+  margin-top: 0.6%;
+  margin-bottom: 0.6%;
 }
 
-.header-seperator {
-  display: inline-block;
-  border-width: 10px;
-  background: rgba(104, 104, 104, 0.43);
-  width: 0.5px;
-  height: 10px;
-  margin-left: 7px;
-  margin-right: 6px
-}
 
 .search-input {
   background: #5c5c5c;
   color: #a4a4a4;
   border: 0;
-  height: 15px;
-  padding-left: 4px;
+  height: 20px;
+  margin-left: 1%;
+  padding-left: 0.5%;
+  margin-top: 1.1%;
 }
 
 .icon-search:before {
@@ -75,51 +75,42 @@ header{
   font-size:8px
 
 }
-
-
-
-.slid-text {
-  text-align: center;
-  color: white;
-  margin-left: 2px;
-}
-
-.header-left-pic {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-top: -2px;
-}
-
-.top-right {
-  float: right;
-  margin-right: 100px;
+.top-left{
+  float: left;
   display: inline-block;
+  width: 50%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
+.top-right{
+  float: right;
+  width: 20%;
+  margin-top: 0.8%;
 
-.upload-lable {
+}
+.top_button{
   background-color: orange;
   color: white;
-  width: 50px;
-  height: 16px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 16px;
-  font-size: 8px;
+  height: 20px;
+  margin-top: 0.6%;
+  border: aliceblue
+
 }
 
 .head-right-img-div {
   background-image: url(/images/hd-icn.svg);
   display: inline-block;
   background-color: orange;
-  background-size: 8px 8px;
-  background-position: 8px 4px;
+  /* background-size: 86% 64%; */
+  background-position: 50% 23%;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: 24px;
-  height: 16px;
+  width: 20%;
+  height: 20px;
   text-align: center;
   content: "";
+  margin-right: 10%;
+  margin-left: 1%;
 }
 
 .head-right-img {
@@ -160,32 +151,35 @@ nav span {
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
+  position:relative;
 
 }
 
 .phone-pic {
   background-image: url(/images/hills-mobile-scr-1x.png);
-  width: 90px;
-  height: 170px;
+  width: 20%;
+  height: 50%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
-  margin-top: 150px;
-  margin-left: -150px
+  position: absolute;
+  left: -9%;
+  bottom: 0%
+
 }
 
 .pad-pic {
   background-image: url(/images/hills-tablet-scr-1x.png);
-  width: 190px;
-  height: 100px;
+  width: 35%;
+  height: 28.5%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
-  margin-top: 70px;
-  margin-left: 300px;
-  margin-right: -172px;
+  position: absolute;
+  bottom: 0%;
+  right: -15%;
 }
 
 .center-in {
@@ -285,7 +279,7 @@ nav span {
 
 .bottom-last-line {
   background-color: white;
-  width: 7%;
+  width: 100px;
   margin: auto;
   height: 34px;
   line-height: 34px;
