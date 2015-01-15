@@ -143,8 +143,8 @@ nav span {
 .center-body {
   background-image: url(/images/bg.jpg);
   display: inline-block;
-  height: 483px;
-  width: 100vw;
+  height: 50%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   opacity: 0.9;
@@ -285,22 +285,24 @@ nav span {
 
 .bottom-last-line {
   background-color: white;
-  width: 12%;
+  width: 7%;
   margin: auto;
+  height: 34px;
+  line-height: 34px;
+  color: #0076B4;
 }
 
-.bottom-linkedin-div:before {
+.bottom-linkedin-div {
   background-color: #0076B4;
-
   background-image: url(/images/linkedin-logo-isolated.png);
-  background-size: 15px 15px;
-  background-position: 2px 2px;
+  background-size: 18px 18px;
+  background-position: 3px 3px;
   background-repeat: no-repeat;
   content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 2px 0px 1px 5px
+  width: 24px;
+  height: 24px;
+  margin: 4px 5px 4px 4px;
+  vertical-align: middle;
 }
 
 .linkedin-pic-bottom {
@@ -311,9 +313,6 @@ nav span {
 
 .create-now-bottom {
   color: #0076B4;
-  vertical-align: super;
-  margin-left: 5px;
-  margin-right: 5px;
 
 }
 
