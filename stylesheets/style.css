@@ -86,51 +86,76 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 29, ../sass/style.scss */
 body {
-  font-size: 12px;
+  font-size: 18px;
   background: #323232;
   color: white;
 }
 
 /* line 35, ../sass/style.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 39, ../sass/style.scss */
 div {
   border-radius: 3px;
 }
 
-/* line 39, ../sass/style.scss */
-header:after {
+/* line 43, ../sass/style.scss */
+button {
+  border: aliceblue;
+  border-radius: 3px;
+}
+
+/* line 48, ../sass/style.scss */
+.top:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* line 46, ../sass/style.scss */
-.inline-block {
-  display: inline-block;
-}
-
-/* line 50, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .logo {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   vertical-align: middle;
   margin-left: 10%;
-  margin-right: 2%;
-  margin-top: 0.6%;
-  margin-bottom: 0.6%;
+  margin-right: 1%;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
+.seperator {
+  border-width: 1px;
+  border-color: #5c5c5c;
+  height: 12px;
+  border-style: solid;
+  vertical-align: middle;
+  margin-left: 1%;
+}
+
+/* line 74, ../sass/style.scss */
+.top-left {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  margin-left: 5%;
+}
+
+/* line 83, ../sass/style.scss */
 .search-input {
   background: #5c5c5c;
-  color: #a4a4a4;
+  color: #b6b6b6;
   border: 0;
   height: 20px;
+  width: 25%;
   margin-left: 1%;
   padding-left: 0.5%;
-  margin-top: 1.1%;
+  margin-top: 0.6%;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .icon-search:before {
   content: "\e986";
   margin-left: -18px;
@@ -138,55 +163,47 @@ header:after {
   font-size: 8px;
 }
 
-/* line 78, ../sass/style.scss */
-.top-left {
-  float: left;
-  display: inline-block;
-  width: 50%;
-  margin-top: 0.5%;
+/* line 102, ../sass/style.scss */
+.top-right {
+  float: right;
+  width: 25%;
+  margin-top: 0.85%;
   margin-bottom: 0.5%;
 }
 
-/* line 85, ../sass/style.scss */
-.top-right {
-  float: right;
-  width: 20%;
-  margin-top: 0.8%;
-}
-
-/* line 91, ../sass/style.scss */
-.top_button {
+/* line 109, ../sass/style.scss */
+.head-right-but1 {
   background-color: orange;
   color: white;
-  height: 20px;
+  height: 24px;
+  width: 54px;
   margin-top: 0.6%;
   border: aliceblue;
+  border-radius: 3px;
 }
 
-/* line 100, ../sass/style.scss */
-.head-right-img-div {
-  background-image: url(/images/hd-icn.svg);
-  display: inline-block;
+/* line 120, ../sass/style.scss */
+.head-right-but2 {
+  background-image: url(../images/hd-icn.svg);
   background-color: orange;
-  /* background-size: 86% 64%; */
-  background-position: 50% 23%;
+  background-size: 53%;
+  background-position: 46% 44%;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: 20%;
-  height: 20px;
-  text-align: center;
-  content: "";
-  margin-right: 10%;
-  margin-left: 1%;
-}
-
-/* line 116, ../sass/style.scss */
-.head-right-img {
+  width: 30px;
+  height: 24px;
   margin-top: 2px;
-  width: 13px;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
+.header-pic {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 3%;
+}
+
+/* line 139, ../sass/style.scss */
 nav {
   background: #5c5c5c;
   padding-top: 5px;
@@ -194,18 +211,34 @@ nav {
   padding-left: 83px;
 }
 
-/* line 128, ../sass/style.scss */
-nav span {
-  margin-left: 14px;
-  margin-right: 13px;
-  color: #d1d1d1;
+/* line 146, ../sass/style.scss */
+nav ul {
+  margin-left: 4.5%;
 }
 
-/* line 134, ../sass/style.scss */
-.center-body {
-  background-image: url(/images/bg.jpg);
+/* line 150, ../sass/style.scss */
+nav ul li {
+  float: left;
+  margin-right: 5%;
+}
+
+/* line 155, ../sass/style.scss */
+a {
+  color: #b6b6b6;
+  text-decoration: none;
+}
+
+/* line 160, ../sass/style.scss */
+ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 166, ../sass/style.scss */
+.main {
+  background-image: url(../images/bg.jpg);
   display: inline-block;
-  height: 50%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -214,11 +247,16 @@ nav span {
   color: white;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
+.main-top p {
+  margin-bottom: 1%;
+}
+
+/* line 181, ../sass/style.scss */
 .center-body-pics {
-  background-image: url(/images/hills-browser-scr-1x.png);
-  width: 60%;
-  height: 320px;
+  background-image: url(../images/hills-browser-scr-1x.png);
+  width: 70%;
+  height: 450px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   content: "";
@@ -226,25 +264,25 @@ nav span {
   position: relative;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .phone-pic {
-  background-image: url(/images/hills-mobile-scr-1x.png);
-  width: 20%;
+  background-image: url("../images/hills-mobile-scr-1x.png");
+  width: 16%;
   height: 50%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
   position: absolute;
-  left: -9%;
+  left: -8%;
   bottom: 0%;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .pad-pic {
-  background-image: url(/images/hills-tablet-scr-1x.png);
+  background-image: url(../images/hills-tablet-scr-1x.png);
   width: 35%;
-  height: 28.5%;
+  height: 30%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   content: "";
@@ -254,123 +292,133 @@ nav span {
   right: -15%;
 }
 
-/* line 185, ../sass/style.scss */
-.center-in {
-  background-color: #0076B4;
-  display: inline-block;
-  line-height: 16px;
-  height: 16px;
-  width: 10%;
-  padding: 4px 4px 6px 5px;
+/* line 220, ../sass/style.scss */
+.main-buttons {
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
 
-/* line 195, ../sass/style.scss */
-.center-in:before {
-  background-image: url(/images/linkedin-logo-isolated.png);
-  width: 12px;
-  height: 12px;
-  background-size: 12px 12px;
-  background-position: 0px 0px;
+/* line 225, ../sass/style.scss */
+.main-but1 {
+  background-image: url(../images/linkedin-logo-isolated.png);
+  background-size: 24px;
   background-repeat: no-repeat;
-  content: "";
-  display: inline-block;
-  line-height: 20px;
-  margin-right: 5px;
-  margin-bottom: 2px;
-  vertical-align: middle;
+  background-position: 8px 8px;
+  background-color: #0076B4;
+  height: 40px;
+  line-height: 40px;
+  color: white;
 }
 
-/* line 212, ../sass/style.scss */
-.center-body-top {
+/* line 236, ../sass/style.scss */
+.main-but1-content {
+  margin-left: 40px;
+  margin-right: 4px;
+}
+
+/* line 241, ../sass/style.scss */
+.main-but2 {
+  display: inline-block;
+  margin-left: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  height: 40px;
+  width: 80px;
+  background-color: transparent;
+  color: white;
+}
+
+/* line 253, ../sass/style.scss */
+.main-top {
   margin-top: 30px;
 }
 
-/* line 216, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .center-body-top p {
   margin-bottom: 20px;
 }
 
-/* line 220, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .first-line {
   font-size: 30px;
 }
 
-/* line 224, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .linkedin {
   height: 15px;
   width: 15px;
   margin: 4px 0px -4px 9px;
 }
 
-/* line 231, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 .create-now-center {
   display: inline-block;
   vertical-align: middle;
   padding: 10px 7px 8px 5px;
 }
 
-/* line 237, ../sass/style.scss */
-.center-thanks {
-  display: inline-block;
-  margin-left: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
-  vertical-align: middle;
-  height: 26px;
-  line-height: 26px;
-  width: 8%;
-}
-
-/* line 249, ../sass/style.scss */
-.bottome-first-line {
+/* line 278, ../sass/style.scss */
+.footer p {
   text-align: center;
   margin-top: 20px;
   line-height: 133%;
+  margin-bottom: 3%;
 }
 
-/* line 255, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .bottom-seperator {
+  border-color: #909090;
   border-style: solid;
-  border-width: 0.8px;
-  border-color: #656565;
-  width: 25px;
+  border-bottom-width: 1px;
+  width: 5%;
   margin: auto;
-  margin-top: 20px;
 }
 
-/* line 264, ../sass/style.scss */
-.bottome-second-line {
+/* line 294, ../sass/style.scss */
+.footer-list li {
+  float: left;
   text-align: center;
-  margin-top: 5px;
+  margin-left: 12%;
 }
 
-/* line 269, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
+.footer-line-sep {
+  color: #9b9b9b;
+  line-height: 88px;
+  height: 88px;
+  font-size: 42px;
+  margin-left: 5%;
+  opacity: 0.5;
+}
+
+/* line 310, ../sass/style.scss */
+.footer-list {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+/* line 315, ../sass/style.scss */
 .bottom-detail {
-  font-size: 9px;
+  font-size: 15px;
   color: #909090;
+  margin-top: 1%;
 }
 
-/* line 274, ../sass/style.scss */
-.bottom-part {
-  display: inline-block;
-  margin: 11px 30px 20px 30px;
-}
-
-/* line 280, ../sass/style.scss */
-.bottom-last-line {
+/* line 321, ../sass/style.scss */
+.footer-button {
   background-color: white;
-  width: 100px;
+  width: 140px;
   margin: auto;
   height: 34px;
   line-height: 34px;
   color: #0076B4;
 }
 
-/* line 289, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .bottom-linkedin-div {
   background-color: #0076B4;
-  background-image: url(/images/linkedin-logo-isolated.png);
+  background-image: url(../images/linkedin-logo-isolated.png);
   background-size: 18px 18px;
   background-position: 3px 3px;
   background-repeat: no-repeat;
@@ -381,19 +429,19 @@ nav span {
   vertical-align: middle;
 }
 
-/* line 302, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .linkedin-pic-bottom {
   height: 15px;
   width: 15px;
   margin: 1px 2px 0px 2px;
 }
 
-/* line 308, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 .create-now-bottom {
   color: #0076B4;
 }
 
-/* line 313, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 footer {
   font-size: 8px;
   color: #909090;
